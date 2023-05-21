@@ -1,0 +1,100 @@
+<!-- Comments
+    1.Contents in html is put inside tags.When you open atag you close it. eg
+    2. All Html/css/Js content are enclosed in the hyml tag. eg
+        3. The headtag is the first tag in the html tag. 
+        There we add things used by the browser eg CSS and page tittle   eg 
+    4. The body tag is wehere we add content for the site, 
+       basically what the users sees, paragrapghs, list, headings, image, links and tables     
+    5. To indicate use of Html5 use the below code atthe beginning of your page 
+      
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body style="margin: top 100px">
+    <div class="img-container">
+      <img src="profile2.jpg" width="200" height="200" alt="My Profile Pic" />
+    </div>
+    <div class="name-container">
+      <h2>Dennis Muturi</h2>
+    </div>
+
+    <p>I am an upoming Software Developer. Currently learning web devlopment</p>
+
+    <h5>My Skills</h5>
+    <ol>
+      <li>HTml</li>
+      <li>Python</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>SQL Databases</li>
+    </ol>
+
+    <div class="form-container">
+      <h5>Contact Me</h5>
+
+      <!-- <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="mail">Email Address:</label><br>
+        <input type="email" id="mail" name="mail" value=""><br>
+        <label for="phone"> Phone Number: </label><br>
+        <input type="text" id="phone" name="phone" value=""><br>
+        <label for="Description"> Message: </label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+
+
+        <input type="submit" value="Submit">
+
+
+     </form> -->
+
+      <form action="/process-contact" method="post">
+        <input
+          type="text"
+          name="client_name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+        <input
+          type="email"
+          name="client_email"
+          placeholder="Enter your email"
+        /><br /><br />
+        <input
+          type="text"
+          name="client_phone"
+          placeholder="Enter your phone"
+        /><br /><br />
+        <div class="container-message">
+          <textarea name="message"></textarea><br /><br />
+        </div>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+    <div class="link-container">
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+        >
+        <i class="fa-brands fa-linkedin fa-2x" ></i></a
+      >
+      <a href="https://www.w3schools.com/html/default.asp">
+        <i class="fa-brands fa-square-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+        >
+        <i class="fa-brands fa-square-facebook fa-2x"></i></a
+      >
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+        >
+        <i class="fa-brands fa-square-twitter fa-2x"></i>
+      </a>
+    </div>
+  </body>
+</html>

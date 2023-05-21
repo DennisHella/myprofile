@@ -1,0 +1,32 @@
+p {
+    font-size: 30px;
+    font-weight:normal;
+    font-style: italic;
+ }
+ body{
+    padding : 25px 50px 75px 50px; 
+    background-color:antiquewhite;  
+ }
+ .img-container
+{
+    margin: auto;
+    width: 30%;
+}
+.name-container{
+    margin: auto;
+    width: 30%;
+}
+
+ .form-container{
+    margin: auto;
+    width: 300px;
+ }
+.form-container form .container-message{
+    margin: auto;
+    width: 200px;
+
+}
+ .link-container{
+    margin: auto;
+    width: 60%;
+ }
